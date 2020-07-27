@@ -1,0 +1,73 @@
+.container-head {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 1200px;*/
+  height: 79px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid #ececec;
+}
+
+.site-nove {
+  /*display: flex;*/
+  justify-content: center;
+  padding: 0px;
+  margin: 0px;
+}
+.site-nove .link {
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.site-nove .item:not(:last-child) {
+  margin-right: 50px;
+}
+.site-nove .link {
+  display: block;
+  color: var(--heading-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.site-nove .link.current {
+  color: var(--background-text-color);
+}
+.link.current:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+.mar {
+  padding-bottom: 94px;
+}
+.mainn {
+  /* display: flex;*/
+  align-items: center;
+}
+.site-nove .port {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+}
+.port:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  width: 100%;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+.site-nove .link:hover,
+.site-nove .link:focus .site-nove .link:active {
+  color: var(--background-text-color);
+}

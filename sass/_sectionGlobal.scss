@@ -1,0 +1,92 @@
+.section-details {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 1200px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    height: 994px;
+    padding: 0;
+    margin-bottom: 60px;
+  }
+}
+.container {
+  /*width: 1200px;*/
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    padding: 0;
+
+    width: 480px;
+  }
+}
+.container-mob {
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    padding-top: 0;
+  }
+}
+.container-team {
+  margin: 0 auto;
+  padding: 0 15px;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    padding-top: 0;
+  }
+}
+.section-job {
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  /* width: 1200px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+}
+.section-team {
+  background-color: #f5f4fa;
+  padding-bottom: 94px;
+  @media screen and (min-width: 480px) {
+    padding-bottom: 60px;
+    width: 480px;
+  }
+}
+.section-customer {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 1200px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+  @media screen and (min-width: 480px) {
+    padding-top: 60px;
+  }
+}
+.test-cont {
+  /*width: 1200px;*/
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 94px;
+}
+.section-grid {
+  margin-left: auto;
+  margin-right: auto;
+  /*width: 1200px;*/
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.address {
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    text-align: center;
+  }
+}
