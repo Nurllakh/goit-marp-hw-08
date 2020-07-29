@@ -12,8 +12,17 @@
   margin-right: 30px;
 }
 .custo {
-  width: 170px;
-  height: 90px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    box-pack: center;
+    flex-pack: center;
+    justify-content: center;
+    width: 210px;
+    height: 90px;
+  }
 }
 .custo a:hover {
   border-color: #2196f3;
@@ -25,7 +34,7 @@
   fill: #afb1b8;
   align-items: center;
   justify-content: center;
-  /*display: flex;*/
+  display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
