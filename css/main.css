@@ -475,10 +475,7 @@ template {
 }
 
 .site-nove {
-  /*display: flex;*/
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /*justify-content: center;*/
   padding: 0px;
   margin: 0px;
 }
@@ -492,6 +489,12 @@ template {
 
 .site-nove .item:not(:last-child) {
   margin-right: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .site-nove .item:not(:last-child) {
+    margin: 0;
+  }
 }
 
 .site-nove .link {
@@ -584,6 +587,12 @@ template {
 
 .contacts-nav .item + .item {
   margin-left: 50px;
+}
+
+@media screen and (min-width: 480px) {
+  .contacts-nav .item + .item {
+    margin: 0;
+  }
 }
 
 .item {
@@ -1148,6 +1157,12 @@ template {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 480px) {
+  .list-button {
+    margin-bottom: 15px;
+  }
+}
+
 .porf-sorti {
   display: inline-block;
   padding: 6px 22px;
@@ -1178,6 +1193,16 @@ template {
   background: var(--background-text-color);
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 480px) {
+  .site-nove.list.mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .logo {

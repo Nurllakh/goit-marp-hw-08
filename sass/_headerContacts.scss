@@ -20,6 +20,9 @@
 }
 .contacts-nav .item + .item {
   margin-left: 50px;
+  @media screen and (min-width: 480px) {
+    margin: 0;
+  }
 }
 .item {
   position: relative;

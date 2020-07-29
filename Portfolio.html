@@ -16,31 +16,41 @@
       <div class="container port">
       <nav class="container-head mainn"> 
         <a href="" class="logo-main" ><span class="logo">Web</span> <span class="logo2" >Studio</span></a>
+      <button type="button" class="mune-button is-open" data-menu-button>
+        <svg width="40" height="40">
+          <use class="icon-menu" href="./images/menumob.svg#icon-menu_24px"></use>
+          <use class="icon-cross" href="./images/menumob.svg#icon-close_24px"></use>
+        </svg>
+      </button>
+      
+      <div class="menu-container" id="menu-container" data-menu>
+      
         <ul class="site-nove list">
-          <li class="site-nove item"><a href="./index.html" class="link">Студия</a></li>
-          <li class="site-nove item"><a href="./Portfolio.html"class="port portfolio">Портфолио</a></li>
+          <li class="site-nove item"><a href="./index.html" class="link current">Студия</a></li>
+          <li class="site-nove item"><a href="./Portfolio.html" class="link">Портфолио</a></li>
           <li class="site-nove item"><a href="" class="link">Контакты</a></li>
         </ul>
-        
+      
         <ul class="contacts-nav list">
-          <li class="item"> 
-            <a href="mailto:info@devstudio.com" class="contacts">  
-              <svg class="cont-svg" width="16" height="12">
-              <use href="./images/sprite.svg#icon-mail"> </use>
-            </svg> info@devstudio.com</a></li>
           <li class="item">
-            <a href="tel:+380961111111" class="contacts"> 
+            <a href="mailto:info@devstudio.com" class="contacts">
+              <svg class="cont-svg" width="16" height="12">
+                <use href="./images/sprite.svg#icon-mail"></use>
+              </svg> info@devstudio.com</a></li>
+          <li class="item">
+            <a href="tel:+380961111111" class="contacts">
               <svg class="cont-svg" width="10" height="15">
-              <use href="./images/sprite.svg#icon-smartphone"> </use>
-            </svg>+38 096 111 11 11</a></li>
-        </ul>   
+                <use href="./images/sprite.svg#icon-smartphone"></use>
+              </svg>+38 096 111 11 11</a></li>
+        </ul>
+      </div>
       </nav>
     </header>
     
     <main>
     <section class="button-title">
       <div class="container">
-        <ul class="site-nove list">
+        <ul class="site-nove list mob">
             <li class="list-button"><a class="porf-sorti" href="">Все</a></li>
             <li class="list-button"><a class="porf-sorti" href="">Веб-сайты</a></li>
             <li class="list-button"><a class="porf-sorti" href="">Приложения</a></li>
@@ -271,5 +281,6 @@
     </div>
   </div>
   </footer>
+  <script src="./js/menu.js"></script>
   </body>
 </html>
