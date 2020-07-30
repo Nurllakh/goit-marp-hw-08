@@ -17,7 +17,7 @@
   border-radius: 4px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     margin-bottom: 15px;
   }
 }
@@ -46,7 +46,7 @@
     0px 3px 1px rgba(0, 0, 0, 0.1);
 }
 .site-nove.list.mob {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: flex;
     flex-wrap: wrap;
   }

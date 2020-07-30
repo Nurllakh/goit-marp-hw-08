@@ -1,17 +1,23 @@
 .details-main {
-  /*display: flex;*/
   margin-left: auto;
   margin-right: auto;
   margin: 0;
   padding: 0;
   justify-content: center;
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    display: flex;
+  }
 }
 .test {
   width: 270px;
   height: 251px;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
     height: 226px;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 768px) {
     margin-bottom: 30px;
   }
 }
@@ -32,7 +38,7 @@
   /*display: flex;*/
   align-items: center;
   justify-content: center;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 100%;
     height: 120px;
     padding-top: 25px;

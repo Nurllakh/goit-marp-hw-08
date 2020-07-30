@@ -20,7 +20,7 @@
   margin-right: 94px;
   align-items: center;
   justify-content: space-around;
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 480px;
     margin-right: 0;
     text-align: center;
@@ -28,7 +28,7 @@
   }
 }
 .dib {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767px) {
     width: 480px;
     text-align: center;
   }

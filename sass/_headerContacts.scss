@@ -16,17 +16,17 @@
 }
 .contacts-nav {
   margin-left: auto;
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: inline-block;
     margin-left: 84px;
   }
 }
 .contacts-nav .item + .item {
-  margin-left: 50px;
-  @media screen and (min-width: 480px) {
+  /*margin-left: 50px;*/
+  @media screen and (max-width: 767px) {
     margin: 0;
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     margin-top: 10px;
   }
 }
@@ -85,7 +85,7 @@
     text-align: center;
     z-index: 1;
   }
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: 768px) {
     display: flex;
   }
 }
