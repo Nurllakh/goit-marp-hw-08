@@ -12,6 +12,9 @@
   /*display: flex;*/
   padding: 0;
   margin: 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .job-title .job-list:not(:last-child) {
   margin-right: 30px;

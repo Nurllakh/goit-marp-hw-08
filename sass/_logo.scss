@@ -25,4 +25,7 @@
 }
 .logo-main {
   margin-right: 85px;
+  @media screen and (min-width: 767px) {
+    margin: 0;
+  }
 }

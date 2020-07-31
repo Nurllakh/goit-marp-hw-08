@@ -1,7 +1,6 @@
 .section-list {
   /*display: flex;*/
-  margin: 0;
-  padding: 0;
+
   margin: auto;
   @media screen and (max-width: 767px) {
     width: 480px;
@@ -12,6 +11,12 @@
     width: 768px;
     display: flex;
     flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    display: -webkit-box;
+    margin: 0;
+    padding: 0;
   }
 }
 .section-list .custo:not(:last-child) {
@@ -26,6 +31,10 @@
     flex-pack: center;
     justify-content: center;
     width: 210px;
+    height: 90px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 170px;
     height: 90px;
   }
 }

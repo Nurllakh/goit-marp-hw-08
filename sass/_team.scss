@@ -1,10 +1,7 @@
 .tem {
-  padding-top: 94px;
   margin-left: auto;
   margin-right: auto;
-  /*width: 1200px;*/
-  padding-left: 15px;
-  padding-right: 15px;
+
   @media screen and (max-width: 767px) {
     width: 480px;
     padding: 0;
@@ -13,11 +10,24 @@
     width: 768px;
     padding: 0;
   }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-top: 94px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 .team-title {
-  /* display: flex;*/
   margin: 0;
   padding: 0;
+  @media screen and (min-width: 768px) {
+    flex-wrap: wrap;
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    display: flex;
+  }
 }
 .team-title .team-list:not(:last-child) {
   margin-right: 30px;
@@ -27,8 +37,7 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
-  width: 270px;
-  height: 422px;
+
   @media screen and (max-width: 767px) {
     width: 450px;
     height: 482px;
@@ -38,6 +47,10 @@
     width: 354px;
     height: 422px;
     margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+    height: 422px;
   }
 }
 
@@ -92,12 +105,16 @@
 }
 
 .teammob {
-  @media screen and (max-width: 467px) {
+  @media screen and (max-width: 767px) {
     width: 450px;
     height: 320px;
   }
-  @media screen and (min-width: 468px) {
+  @media screen and (min-width: 768px) {
     width: 354px;
+    height: 260px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
     height: 260px;
   }
 }
