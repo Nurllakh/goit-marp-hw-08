@@ -5,6 +5,9 @@
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 34px;
+  padding-top: 60px;
+  @media screen and (max-width: 767px) {
+  }
 }
 .site-nove .list-button:not(:last-child) {
   margin-right: 8px;

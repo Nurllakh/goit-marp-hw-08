@@ -532,9 +532,7 @@ template {
 }
 
 .site-nove {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  /*justify-content: center;*/
   padding: 0px;
   margin: 0px;
 }
@@ -547,6 +545,9 @@ template {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -602,10 +603,21 @@ template {
 }
 
 .mainn {
-  /*display: flex;*/
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .mainn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 480px;
+  }
 }
 
 .site-nove .port {
@@ -980,6 +992,14 @@ template {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 767px) {
+  .feature-etem {
+    width: 450px;
+    height: 404px;
+    padding-left: 15px;
+  }
+}
+
 .feature-etem:nth-child(3n) {
   margin-right: 0;
 }
@@ -1050,6 +1070,13 @@ template {
   font-size: 16px;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 767px) {
+  .img-mob {
+    width: 450px;
+    height: 294px;
+  }
 }
 
 .section-title {
@@ -1409,6 +1436,7 @@ template {
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 34px;
+  padding-top: 60px;
 }
 
 .site-nove .list-button:not(:last-child) {
@@ -1518,6 +1546,18 @@ template {
   width: 100%;
 }
 
+@media screen and (max-width: 767px) {
+  .footer-title {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 1999px) {
+  .footer-title {
+    width: 1200px;
+  }
+}
+
 .title-footer {
   margin-left: auto;
   margin-right: auto;
@@ -1600,6 +1640,9 @@ template {
   text-align: center;
   width: 44px;
   height: 44px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .social-networks {
@@ -1612,7 +1655,9 @@ template {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  /*display: flex;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition-property: background-color;

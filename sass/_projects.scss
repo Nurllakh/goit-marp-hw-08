@@ -24,6 +24,11 @@
   transition-property: color, background-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 404px;
+    padding-left: 15px;
+  }
 }
 
 .feature-etem:nth-child(3n) {
@@ -85,4 +90,10 @@
   font-size: 16px;
   color: var(--title-text-color);
   letter-spacing: 0.03em;
+}
+.img-mob {
+  @media screen and (max-width: 767px) {
+    width: 450px;
+    height: 294px;
+  }
 }
