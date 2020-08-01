@@ -1,13 +1,6 @@
 .footer-title {
   background: #2f303a;
   width: 100%;
-  @media screen and (max-width: 767px) {
-    width: 480px;
-  }
-
-  @media screen and (min-width: 1999px) {
-    width: 1200px;
-  }
 }
 .title-footer {
   margin-left: auto;

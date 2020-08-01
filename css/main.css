@@ -497,6 +497,13 @@ template {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container.port-tabl {
+    width: 1200px;
+    padding-bottom: 94px;
+  }
+}
+
 .container-head {
   position: relative;
   margin-left: auto;
@@ -616,7 +623,6 @@ template {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 480px;
   }
 }
 
@@ -686,6 +692,14 @@ template {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contacts-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .contacts-nav .item + .item {
   /*margin-left: 50px;*/
 }
@@ -699,6 +713,13 @@ template {
 @media screen and (min-width: 768px) {
   .contacts-nav .item + .item {
     margin-top: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacts-nav .item + .item {
+    margin-left: 50px;
+    margin: 0 30px;
   }
 }
 
@@ -716,8 +737,17 @@ template {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item.tabl {
-  padding: 0;
+@media screen and (min-width: 768px) {
+  .item.tabl {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .item.tabl {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .item a:hover svg {
@@ -783,6 +813,15 @@ template {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .menu-container {
+    width: 80%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -976,6 +1015,12 @@ template {
   margin-bottom: 94px;
 }
 
+@media screen and (min-width: 768px) {
+  .grid .feature-etem:nth-last-child(-n + 3) {
+    margin-bottom: 30px;
+  }
+}
+
 .feature-etem {
   overflow: hidden;
   border: 1px solid #eeeeee;
@@ -1000,8 +1045,23 @@ template {
   }
 }
 
-.feature-etem:nth-child(3n) {
-  margin-right: 0;
+@media screen and (min-width: 768px) {
+  .feature-etem {
+    width: 354px;
+    height: 404px;
+  }
+  .feature-etem:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-etem:nth-child(3n) {
+    margin-right: 0;
+  }
+  .feature-etem:nth-child(2n) {
+    margin-right: 30px;
+  }
 }
 
 .feature-etem .description {
@@ -1544,18 +1604,6 @@ template {
 .footer-title {
   background: #2f303a;
   width: 100%;
-}
-
-@media screen and (max-width: 767px) {
-  .footer-title {
-    width: 480px;
-  }
-}
-
-@media screen and (min-width: 1999px) {
-  .footer-title {
-    width: 1200px;
-  }
 }
 
 .title-footer {

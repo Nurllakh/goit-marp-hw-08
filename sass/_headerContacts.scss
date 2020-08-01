@@ -24,6 +24,9 @@
     display: inline-block;
     margin-left: 84px;
   }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 .contacts-nav .item + .item {
   /*margin-left: 50px;*/
@@ -32,6 +35,10 @@
   }
   @media screen and (min-width: 768px) {
     margin-top: 10px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+    margin: 0 30px;
   }
 }
 .item {
@@ -45,7 +52,13 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .item.tabl {
-  padding: 0;
+  @media screen and(min-width: 768px) {
+    padding: 0;
+  }
+  @media screen and(min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .item a:hover svg {
   fill: #2196f3;
@@ -93,6 +106,10 @@
   }
   @media screen and (min-width: 768px) {
     display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 80%;
+    justify-content: space-between;
   }
 }
 .container.tablm {
