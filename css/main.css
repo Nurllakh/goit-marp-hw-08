@@ -1606,6 +1606,12 @@ template {
   width: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .footer-title {
+    width: 480px;
+  }
+}
+
 .title-footer {
   margin-left: auto;
   margin-right: auto;
